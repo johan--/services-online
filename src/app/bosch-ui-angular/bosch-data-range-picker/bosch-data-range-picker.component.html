@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col">
+    <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions" (rangeChange)="rangeChanged($event)"></button>
+    <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions2" (rangeChange)="rangeChanged($event)"></button>
+
+    <date-time-range-picker [options]="{inline: true}" (rangeChange)="rangeChanged2($event)"></date-time-range-picker>
+  </div>
+</div>
+
