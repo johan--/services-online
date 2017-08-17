@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: "sfde";
+  src:url("/assets/fonts/sfde-font/sfde.eot");
+  src:url("/assets/fonts/sfde-font/sfde.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/sfde-font/sfde.woff") format("woff"),
+    url("/assets/fonts/sfde-font/sfde.ttf") format("truetype"),
+    url("/assets/fonts/sfde-font/sfde.svg#sfde") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "sfde" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sfdeicon-"]:before,
+[class*=" sfdeicon-"]:before {
+  font-family: "sfde" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sfdeicon-animal:before {
+  content: "\61";
+}
+.sfdeicon-truck-left-faced:before {
+  content: "\62";
+}
+.sfdeicon-van-left-faced:before {
+  content: "\63";
+}
+.sfdeicon-motorbike-right:before {
+  content: "\64";
+}
+.sfdeicon-cycle-right:before {
+  content: "\65";
+}
+.sfdeicon-pedestrian-group:before {
+  content: "\66";
+}
+.sfdeicon-pedestrian:before {
+  content: "\67";
+}
+.sfdeicon-pedestrian2:before {
+  content: "\68";
+}
+.sfdeicon-car-left:before {
+  content: "\69";
+}
+.sfdeicon-arrow-distance:before {
+  content: "\6a";
+}
+.sfdeicon-arrow-both-direction:before {
+  content: "\6b";
+}
+.sfdeicon-gap-measurement:before {
+  content: "\6d";
+}
+.sfdeicon-arrow-2:before {
+  content: "\6f";
+}
+.sfdeicon-car-top-view:before {
+  content: "\72";
+}

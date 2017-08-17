@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {
   DateTimeRange,
   DateTimeRangePickerOptionsStruct
@@ -8,14 +8,10 @@ import * as moment from 'moment';
 @Component({
   selector: 'bosch-data-range-picker',
   templateUrl: './bosch-data-range-picker.component.html',
+  encapsulation: ViewEncapsulation.None,
   styleUrls: ['./bosch-data-range-picker.component.scss']
 })
 export class BoschDataRangePickerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   pickerOptions: DateTimeRangePickerOptionsStruct = {
     startDate: moment('2017-01-01 00:00'),
@@ -37,6 +33,13 @@ export class BoschDataRangePickerComponent implements OnInit {
     modal: false,
     popup: true
   };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+
 
   rangeChanged(range: DateTimeRange) {
     console.log('rangeChanged', range);

@@ -1,0 +1,80 @@
+/* The ribbons */
+
+.corner-ribbon {
+  width: 180px;
+  position: fixed;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  box-shadow: 5px 4px 3px rgba(0, 0, 0, .3);
+  overflow: hidden;
+  z-index: 500;
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky {
+  position: fixed;
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left {
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right {
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left {
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right {
+  top: auto;
+  right: -70px;
+  bottom: 10px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Colors */
+
+.corner-ribbon.white {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.corner-ribbon.black {
+  background: #333;
+}
+
+.corner-ribbon.grey {
+  background: #999;
+}
+
+.corner-ribbon.blue {
+  background: #39d;
+}
+
+.corner-ribbon.red {
+  background: #e43;
+}

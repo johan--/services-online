@@ -3,14 +3,24 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {TickTockModule} from 'bosch-angular2-ui-library';
+import {BoschUiLibraryModule} from 'bosch-angular2-ui-library';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {InternalLayoutComponent} from './core/internal-layout/internal-layout.component';
 import {HomeComponent} from './core/home/home.component';
 import {ExternalLayoutComponent} from './core/external-layout/external-layout.component';
 import {ErrorComponent} from './core/error/error.component';
+import {Http, HttpModule} from '@angular/http';
+
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
+export function translateHttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 
 @NgModule({
@@ -23,11 +33,20 @@ import {ErrorComponent} from './core/error/error.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
-    TickTockModule.forRoot(),
+    BoschUiLibraryModule.forRoot(),
     NgbModule.forRoot(),
-    TranslateModule.forRoot()
-
+    TranslateModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: translateHttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

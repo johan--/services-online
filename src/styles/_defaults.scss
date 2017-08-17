@@ -1,0 +1,105 @@
+@import 'base/variables';
+@import 'base/tooltip';
+@import 'utils/mixins';
+@import '~bosch-bootstrap/src/sass/bosch-bootstrap.scss';
+@import '~font-awesome/scss/font-awesome.scss';
+@import '~leaflet/dist/leaflet.css';
+@import '~bootstrap-daterangepicker/daterangepicker.scss';
+@import '~ng2-dnd/style.css';
+@import 'vendor/json-formatter';
+@import "base/sfde-fonts";
+@import 'base/ribbon';
+@import 'base/date-time-range-picker';
+@import '~bosch-angular2-ui-library/src/styles/styles.scss';
+
+
+// The body should be at least as height as the height of the view
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+// Ensure these elements grow in height at least to the view height
+app-root,
+external-layout,
+internal-layout,
+external-layout > * {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// the router-outlets are dummy objects that should not effect the layout
+external-layout > router-outlet {
+  flex-grow: 0;
+}
+
+// an element that centers its content vertically
+.v-center {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.super-bg {
+  background: $gray-light;
+}
+
+.card {
+  margin-bottom: $spacer;
+}
+
+.card-inverse {
+  color: #fff;
+}
+
+.card-inverse a {
+  color: #fff;
+}
+
+.btn-transparent {
+  background: transparent;
+}
+
+.form-default {
+  max-width: 600px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  z-index: 1001;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.move-button {
+  cursor: ns-resize;
+}
+
+.popover.show {
+  max-width: none;
+}
+
+.ngb-tp .form-control {
+  width: auto;
+}
+.ng-touched.ng-invalid:not(form)  {
+  border-right: 5px solid rgb(226,0,21);
+}
+json-editor .ace_searchbtn_close {
+  display:none;
+}
+
+// fix of right position dropdown TODO remove in ng-bootstrap beta.2
+.dropdown-menu-right {
+  margin-left: -200px;
+
+}

@@ -8,18 +8,18 @@ import {AngularSeedTickTockComponent} from './angular-seed-tick-tock/angular-see
 
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {TickTockModule} from 'bosch-angular2-ui-library';
+import {BoschUiLibraryModule} from 'bosch-angular2-ui-library';
 import { DemoComponentComponent } from './demo-component/demo-component.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 @NgModule({
   imports: [
     CommonModule,
     BoschUiAngularRoutingModule,
-    TickTockModule.forRoot(),
-    NgbModule
-
-
+    BoschUiLibraryModule.forRoot(),
+    NgbModule,
+    TranslateModule,
   ],
   declarations: [
     BoschDataRangePickerComponent,

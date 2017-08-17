@@ -1,0 +1,48 @@
+@import "../../../styles/defaults";
+/*$rb-dark-blue: 	red !important;
+$rb-red: 	red !important;
+$gray-light: red !default;*/
+
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.custom-day.from {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+.custom-day.to {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+.custom-day.range {
+  background-color: $rb-dark-blue;
+  color: white;
+}
+.custom-day:hover {
+  background-color: $rb-dark-blue;
+  color: white;
+}
+.custom-day.faded {
+  opacity: 0.4;
+}
+.custom-day.faded:hover {
+  opacity: 0.8;
+}
+.custom-day.disabled {
+  color: $gray-light;
+}
+.form-control.ng-invalid  {
+  border-right: 5px solid $rb-red;
+  border-color: $rb-red;
+}
+
+
+
