@@ -5,17 +5,23 @@ import { InternalLayoutComponent } from './internal-layout/internal-layout.compo
 import { ExternalLayoutComponent } from './external-layout/external-layout.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { ErrorComponent } from './error/error.component';
+import { FootNavComponent } from './foot-nav/foot-nav.component';
+import {RouterModule} from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    NgbModule
   ],
   declarations: [
     HomeComponent,
     InternalLayoutComponent,
     ExternalLayoutComponent,
     TopNavComponent,
-    ErrorComponent
+    ErrorComponent,
+    FootNavComponent
   ]
 })
 export class CoreModule { }

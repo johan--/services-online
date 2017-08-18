@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Constants} from '../../../constants';
 
 @Component({
   selector: 'top-nav',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
+  routing = Constants.routing;
   constructor() { }
 
   ngOnInit() {

@@ -17,7 +17,7 @@ import {TranslateModule} from '@ngx-translate/core';
   imports: [
     CommonModule,
     BoschUiAngularRoutingModule,
-    BoschUiLibraryModule.forRoot(),
+    BoschUiLibraryModule,
     NgbModule,
     TranslateModule,
   ],

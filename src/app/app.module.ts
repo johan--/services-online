@@ -17,6 +17,8 @@ import {Http, HttpModule} from '@angular/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {SharedModule} from './shared/shared.module';
+import {CoreModule} from './core/core.module';
 
 export function translateHttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,10 +28,6 @@ export function translateHttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    InternalLayoutComponent,
-    HomeComponent,
-    ExternalLayoutComponent,
-    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +35,8 @@ export function translateHttpLoaderFactory(http: HttpClient) {
     HttpModule,
     HttpClientModule,
     AppRoutingModule,
+    SharedModule,
+    CoreModule,
     BoschUiLibraryModule.forRoot(),
     NgbModule.forRoot(),
     TranslateModule.forRoot(),
