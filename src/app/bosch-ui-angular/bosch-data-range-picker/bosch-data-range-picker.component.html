@@ -1,9 +1,17 @@
-<div class="row">
-  <div class="col">
-    <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions" (rangeChange)="rangeChanged($event)"></button>
-    <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions2" (rangeChange)="rangeChanged($event)"></button>
+<div class="container-fluid">
 
-    <date-time-range-picker [options]="{inline: true}" (rangeChange)="rangeChanged2($event)"></date-time-range-picker>
+  <div class="card">
+    <h6 class="card-header">
+      <ng-container>Data-range-picker demo</ng-container>
+    </h6>
+    <div class="card-block">
+      <div class="col">
+        <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions" (rangeChange)="rangeChanged($event)"></button>
+        <button class="btn btn-secondary" [dateTimeRangePicker]="pickerOptions2" (rangeChange)="rangeChanged($event)"></button>
+
+        <date-time-range-picker [options]="{inline: true}" (rangeChange)="rangeChanged2($event)"></date-time-range-picker>
+      </div>
+    </div>
   </div>
-</div>
 
+</div>
