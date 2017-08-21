@@ -1,14 +1,12 @@
-# Bosch-ui-library demo- specific angular components, directives, services and pipes  for Bosch ui projects 
+# Bosch-ui-library-demo 
+Test  all the directives and components in action here
 
 ## Table of Contents
 
-* [About](#about)
 * [Main-dependencies](#Dependencies)
 * [Installation](#Installation)
 * [Maintainers](#maintainers)
 
-## <a name="about">About</a>
-View all the directives and components in action of  the [bosch-angular-ui-components](https://TAD4ABT@products.bosch-si.com/stash/scm/instiot/bosch-angular-ui-components.git)!
 
 
 ## <a name="Main-dependencies">Main dependencies</a>
@@ -18,7 +16,7 @@ View all the directives and components in action of  the [bosch-angular-ui-compo
 * [ngx-translate/core and @ngx-translate/http-loader](https://github.com/ngx-translate/core)
 * [bosch-bootstrap](https://products.bosch-si.com/stash/scm/instiot/bosch-bootstrap.git#v4)
 
-## <a name="Installation and setup">Installation and setup</a>
+## <a name="Installation-and-setting">Installation and setting</a>
 
 To install this library go to root of your angular project , run:
 

@@ -7,11 +7,7 @@ import {BoschUiLibraryModule} from 'bosch-angular2-ui-library';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {InternalLayoutComponent} from './core/internal-layout/internal-layout.component';
-import {HomeComponent} from './core/home/home.component';
-import {ExternalLayoutComponent} from './core/external-layout/external-layout.component';
-import {ErrorComponent} from './core/error/error.component';
-import {Http, HttpModule} from '@angular/http';
+import {HttpModule} from '@angular/http';
 
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
