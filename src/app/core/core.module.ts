@@ -8,12 +8,14 @@ import { ErrorComponent } from './error/error.component';
 import { FootNavComponent } from './foot-nav/foot-nav.component';
 import {RouterModule} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    TranslateModule
   ],
   declarations: [
     HomeComponent,

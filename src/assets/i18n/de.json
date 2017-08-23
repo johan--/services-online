@@ -230,12 +230,6 @@
 		"collection": "Collection",
 		"project": "Projekt"
 	},
-	"dateTimePicker": {
-		"from": "Von",
-		"to": "Bis",
-		"cancel": "Abbrechen",
-		"apply": "Übernehmen"
-	},
 	"downloads": {
 		"title": "Downloads",
 		"download": "Download"
