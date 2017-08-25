@@ -22,25 +22,24 @@
         </li>
       </ul>
 
-      <div ngbDropdown class="d-inline-block">
-        <a href="javascript:" class="btn" id="userDropdown" ngbDropdownToggle>
-          <span class="fa fa-language"></span>
-          Language
-        </a>
-        <div class="dropdown-menu" [class.dropdown-menu-right]="isCollapsed" aria-labelledby="userDropdown" ngbDropdownMenu="">
-          <button class="dropdown-item" (click)="switchLanguage('de')">German</button>
-          <button class="dropdown-item" (click)="switchLanguage('en')">English</button>
-        </div>
+      <!--<div class="col-sm-7">
+        <span class="fa fa-language"></span>
+        <select [(ngModel)]="language" (ngModelChange)="switchLanguage($event)" >
+          <option value="null" translate>Language</option>
+          <option *ngFor="let l of languages" [ngValue]= "l.id" > {{l.name}} </option>
+        </select>
+      </div>-->
 
-        <!--<div class="form-group row">
-          <label class="col-sm-5 col-form-label" translate>settings.language</label>
-          <div class="col-sm-7">
-            <select>
-              <option value="null" translate>settings.browserDefault</option>
-              <option *ngFor="let l of languages" value="{{l.id}}">{{l.name}}</option>
-            </select>
-          </div>
-        </div>-->
+
+
+      <div  class="d-inline-block">
+
+
+          <span class="fa fa-language"></span>
+          <select [(ngModel)]="language" (ngModelChange)="switchLanguage($event)" >
+            <option value="null" translate>Language</option>
+            <option *ngFor="let l of languages" [ngValue]= "l.id" > {{l.name}} </option>
+          </select>
       </div>
     </div>
   </nav>

@@ -247,5 +247,9 @@
 		"title": "Settings",
 		"language": "Language",
 		"browserDefault": "Browser language"
-	}
+	},
+  "welcome": {
+    "welcome ": "Welcome to the",
+    "intro": "We have currently the following components libraries:"
+  }
 }

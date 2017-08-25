@@ -10,6 +10,7 @@ import {ConfigurationService} from '../../config/configuration.service';
 })
 export class TopNavComponent implements OnInit {
   languages = [];
+  configLanguage = null;
 
   routing = Constants.routing;
   constructor(private translate: TranslateService,
@@ -21,6 +22,24 @@ export class TopNavComponent implements OnInit {
 
   ngOnInit() {
     this.languages = this.getLanguages();
+  }
+
+  /*set language(lang: string) {
+    this.settings.language = lang === 'null' ? null : lang;
+    if (this.settings.language) {
+      console.log('this.settings.language', this.settings.language);
+      this.translate.use(this.settings.language);
+    } else {
+      this.translate.use(this.config.getAutoConfiguredLanguage());
+    }
+    this.settings.persist();
+  }*/
+
+  get language() {
+    if (this.configLanguage === null) {
+      return 'null';
+    }
+    return this.configLanguage;
   }
 
   getLanguages() {
@@ -37,7 +56,8 @@ export class TopNavComponent implements OnInit {
     return languages;
   }
 
-  switchLanguage(language: string){
+  switchLanguage(language: string) {
+    console.log('language', language);
     this.translate.use(language);
   }
 

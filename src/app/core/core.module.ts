@@ -9,13 +9,15 @@ import { FootNavComponent } from './foot-nav/foot-nav.component';
 import {RouterModule} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateModule} from '@ngx-translate/core';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     NgbModule,
-    TranslateModule
+    TranslateModule,
+    FormsModule
   ],
   declarations: [
     HomeComponent,

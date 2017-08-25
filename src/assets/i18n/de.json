@@ -247,5 +247,10 @@
 		"title": "Einstellungen",
 		"language": "Sprache",
 		"browserDefault": "Browser Standard"
-	}
+	},
+  "welcome": {
+    "welcome ": "Willkommen zu dem",
+    "intro": "wir haben gerade the folgende komponent-library"
+  }
+
 }
