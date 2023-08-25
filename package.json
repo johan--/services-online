@@ -24,7 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.1",
     "@ngx-translate/core": "^7.2.0",
     "@ngx-translate/http-loader": "^1.0.2",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.0.0-beta.2",
     "bootstrap-daterangepicker": "^2.1.25",
     "bosch-angular2-ui-library": "git+https://products.bosch-si.com/stash/scm/instiot/bosch-angular-ui-components.git",
     "bosch-bootstrap": "git+https://products.bosch-si.com/stash/scm/instiot/bosch-bootstrap.git#v4",
